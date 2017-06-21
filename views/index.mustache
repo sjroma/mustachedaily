@@ -7,9 +7,16 @@
 
 <body>
   <div class="container">
-    {{#users}}
-    <img src="{{avatar}}"> {{name}} {{ job }} {{ company }} 
-    {{/users}}
+<!--    {{ #users }}-->
+    <div class="bots">
+      <div div id="bot_container">
+        <img src = "{{avatar}}" alt="cartoon robot picture"> 
+        <div id="name">{{ name }}</div>
+        <div id="job">{{ job }}</div>
+        <div id="company">{{ company }}</div>
+      </div>
+<!--    {{ /users }}-->
+    </div>
   </div>
 </body>
 

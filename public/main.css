@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border: .5px solid black;
+}
+
+.bots {
+  
+}
+
+#bot_container {
+  
+}
+
+#name {
+  
+}
+
+#job {
+  
+}
+
+#company {
+  
+}

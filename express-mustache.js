@@ -9,6 +9,7 @@ app.engine('mustache', mustacheExpress());  // templating engine
 app.set('views', './views')
 app.set('view engine', 'mustache')
 
+
 // TODO put your routes here
 app.get('/', function (req, res) {
   res.render('index', {users: data.users}); // gather user data for the index page

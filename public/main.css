@@ -10,6 +10,7 @@
   border: .5px solid black;
   display: flex;
   flex-direction: column;
+  font-family: sans-serif;
 }
 
 .row {
@@ -26,11 +27,18 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  width: 25%;
+  padding-left: 1em;
+  padding-right: 1em;
+  /* width: 25%; */
 }
 
-card-img-top {
-  
+.card-img-top {
+  height: 125px;
+  width: 170px;
+}
+
+.title_company {
+  font-weight: 200;
 }
 
 ul {

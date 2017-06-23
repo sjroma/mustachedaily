@@ -12,8 +12,8 @@
       <ul>
         <div class="robot">
           <li><img class="card-img-top" src="{{avatar}}" alt="Picture of {{name}}"></li>
-          <li><a href="./{{username}}">{{name}}</a></li>
-          <li>{{job}}, {{company}}
+          <li><b><a href="./{{username}}">{{name}}</a></b></li>
+          <li class="title_company">{{job}}, {{company}}
               {{^users}}
                 <p class="card-text text-danger">Available for hire</p>
               {{/users}}
@@ -22,7 +22,6 @@
       </ul>
       {{/users}}
     </div>
-
   </div>
 </body>
 

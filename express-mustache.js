@@ -1,7 +1,7 @@
 const express = require('express');
 const mustacheExpress = require('mustache-express');
 
-const data = require("./data"); // looks for data in the dir...don't have to specify data.js
+const data = require("./data.js"); // looks for data in the dir...don't have to specify data.js
 const app = express();
 app.use(express.static('public'));
 
@@ -15,8 +15,11 @@ app.get('/', function (req, res) {
   res.render('index', {users: data.users}); // gather user data for the index page
 });
 
-//app.get('/:dynamic_route', function (req, res) { // path to get all individual user info
-//  res.send(res.params.dynamic_route);
+//app.get('/:username', function (req, res) { // path to get all individual user info
+//  var userProfile = data.users.find(function(x) {
+//    return x.username === req.params.username
+//  });
+//  res.render('robots', userProfile);
 //});
 
 app.listen(3000, function () {

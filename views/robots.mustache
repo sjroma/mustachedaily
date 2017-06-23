@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container mt-4">
+    <div class="row">
+       {{#users}} 
+      <ul>
+        <div class="robot">
+          <li><img class="card-img-top" src="{{avatar}}" alt="Picture of {{name}}"></li>
+          <li><a href="./{{username}}">{{name}}</a></li>
+<!--
+          <li>{{#job}} 
+              {{job}}, {{company}}  
+              {{/job}} 
+              {{^job}}
+               <p class="card-text text-danger">Available for hire</p>
+             {{/job}}
+          </li>
+-->
+        </div>
+      </ul>
+       {{/users}} 
+    </div>
+  </div>
+</body>
+
+</html>

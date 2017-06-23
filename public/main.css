@@ -1,25 +1,38 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  outline: 0;
+  padding: 0;
+}
+
 .container {
+  align-items: center;
+  border: .5px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  border: .5px solid red;
   display: flex;
   flex-wrap: wrap;
-  border: .5px solid black;
+  width: 100%;
 }
 
-.bots {
+.robot {
+  align-items: center;
+     border: 1px solid black; 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25%;
+}
+
+card-img-top {
   
 }
 
-#bot_container {
-  
-}
-
-#name {
-  
-}
-
-#job {
-  
-}
-
-#company {
-  
+ul {
+  list-style-type: none;
 }

@@ -37,7 +37,12 @@
   width: 170px;
 }
 
+.user {
+  
+}
+
 .title_company {
+  font-size: smaller;
   font-weight: 200;
 }
 
